@@ -6,6 +6,41 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adhere to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 App download [Install](https://play.google.com/apps/internaltest/4699210505717851596)
 
+## 2.5.7A7 Iot Terminal Block App 2021-06-15
+### Added
+- RTD Config Page
+- RTD Config Page -> Alarm threshold, Change detection threshold units will be changed by range spinner item
+
+- DeviceInfo Page
+- DeviceInfo Page -> MQTT Keep A Live -> Safe Value (0-65535)
+
+- CloudSetting Page
+- CloudSetting Page -> lock EditText(Port) when choosing ORing Cloud.
+- CloudSetting Page -> Only send Cloud_Config command when choosing ORing Cloud.
+
+- Gateway Page
+- Gateway Page -> Modbus RTU -> Timeout -> Safe Value (10-300)
+- Gateway Page -> Modbus Slave -> CONFIGURE -> Slave ID -> Safe Value (0-255)
+- Gateway Page -> Modbus Slave -> CONFIGURE -> Start Address -> Safe Value (0-65535)
+- Gateway Page -> Modbus Slave -> CONFIGURE -> Num of Data -> Safe Value (1-128)
+- Gateway Page -> Modbus Slave -> CONFIGURE -> Scan Interval -> Safe Value (10-65535)
+
+- BLE Connection Check
+
+### Changed
+Forcing mode -> Click (Disable Force Mode) button -> Normal mode
+Forcing mode -> Hang out app -> Normal mode
+Forcing mode -> To other menu item -> Normal mode
+Forcing mode -> Click back -> Normal mode
+
+### Fixed
+- Dashboard Page 
+- Dashboard Page -> Auto Update 
+
+- I/O Page 
+- I/O Page -> Auto Update
+
+
 ## 2.5.7A6 Iot Terminal Block App 2021-05-26
 ### Added
 - Remote Control Page
