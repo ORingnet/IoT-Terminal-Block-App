@@ -28,10 +28,11 @@ App download [Install](https://play.google.com/apps/internaltest/469921050571785
 - BLE Connection Check
 
 ### Changed
-Forcing mode -> Click (Disable Force Mode) button -> Normal mode
-Forcing mode -> Hang out app -> Normal mode
-Forcing mode -> To other menu item -> Normal mode
-Forcing mode -> Click back -> Normal mode
+- Forcing mode
+- Forcing mode -> Click (Disable Force Mode) button -> Normal mode
+- Forcing mode -> Hang out app -> Normal mode
+- Forcing mode -> To other menu item -> Normal mode
+- Forcing mode -> Click back -> Normal mode
 
 ### Fixed
 - Dashboard Page 
