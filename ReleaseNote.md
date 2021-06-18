@@ -10,9 +10,7 @@ App download [Install](https://play.google.com/apps/internaltest/469921050571785
 ### Added
 - DeviceInfo Page
 - DeviceInfo Page -> MQTT Keep A Live -> Empty value protection
-
-- DeviceInfo 
-- DeviceInfo -> Edit Device Name -> Limit 4 ~ 12 word (ascii only)
+- DeviceInfo Page -> Edit Device Name -> Limit 4 ~ 12 word (ascii only)
 
 ### changed
 - Gateway Page
