@@ -6,6 +6,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adhere to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 App download [Install](https://play.google.com/apps/internaltest/4699210505717851596)
 
+## 2.5.7A8 Iot Terminal Block App 2021-06-17
+### Added
+- DeviceInfo Page
+- DeviceInfo Page -> MQTT Keep A Live -> Empty value protection
+- DeviceInfo Page -> Edit Device Name -> Limit 4 ~ 12 word (ascii only)
+
+### changed
+- Gateway Page
+- Gateway Page -> Modbus Slave -> Configure -> Auto Update
+
+### Fixed 
+- Gateway Page
+- Gateway Page -> Modbus RTU -> Timeout -> Empty value protection
+- Gateway Page -> Modbus Slave -> CONFIGURE -> Slave ID -> Empty value protection
+- Gateway Page -> Modbus Slave -> CONFIGURE -> Start Address -> Empty value protection
+- Gateway Page -> Modbus Slave -> CONFIGURE -> Num of Data -> Empty value protection
+- Gateway Page -> Modbus Slave -> CONFIGURE -> Scan Interval -> Empty value protection
+
 ## 2.5.7A7 Iot Terminal Block App 2021-06-15
 ### Added
 - RTD Config Page
@@ -28,11 +46,10 @@ App download [Install](https://play.google.com/apps/internaltest/469921050571785
 - BLE Connection Check
 
 ### Changed
-- Forcing mode
-- Forcing mode -> Click (Disable Force Mode) button -> Normal mode
-- Forcing mode -> Hang out app -> Normal mode
-- Forcing mode -> To other menu item -> Normal mode
-- Forcing mode -> Click back -> Normal mode
+Forcing mode -> Click (Disable Force Mode) button -> Normal mode
+Forcing mode -> Hang out app -> Normal mode
+Forcing mode -> To other menu item -> Normal mode
+Forcing mode -> Click back -> Normal mode
 
 ### Fixed
 - Dashboard Page 
