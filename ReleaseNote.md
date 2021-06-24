@@ -7,30 +7,30 @@ and this project adhere to [Semantic Versioning](https://semver.org/spec/v2.0.0.
 App download [Install](https://play.google.com/apps/internaltest/4699210505717851596)
 ## 2.5.7A9 IoT Terminal Block App 2021-06-22
 ### Added
-Gateway Page
+- Gateway Page
 - Gateway Page -> Modbus RTU -> Timeout -> singleLine
 - Gateway Page -> Modbus Slave -> CONFIGURE -> Slave ID -> singleLine
 - Gateway Page -> Modbus Slave -> CONFIGURE -> Start Address -> singleLine
 - Gateway Page -> Modbus Slave -> CONFIGURE -> Num of Data -> singleLine
 - Gateway Page -> Modbus Slave -> CONFIGURE -> Scan Interval -> singleLine
 
-CloudSetting Page
+- CloudSetting Page
 - CloudSetting Page -> Port -> singleLine
 
-BLE Password Check Page
+- BLE Password Check Page
 - New Password -> set safe value range
 - Confirm Password -> set safe value range
 - Confirm Password -> error massage
 
 ### changed 
-Gateway Page
+- Gateway Page
 - Gateway Page -> Modbus RTU -> Timeout -> UIO
 - Gateway Page -> Modbus Slave -> CONFIGURE -> Slave ID -> UIO
 - Gateway Page -> Modbus Slave -> CONFIGURE -> Start Address -> UIO
 - Gateway Page -> Modbus Slave -> CONFIGURE -> Num of Data -> UIO
 - Gateway Page -> Modbus Slave -> CONFIGURE -> Scan Interval -> UIO
 
-I/O Page
+- I/O Page
 - I/O Page -> AIConfig -> High Alarm threshold -> UIO
 - I/O Page -> AIConfig -> Low Alarm threshold -> UIO
 - I/O Page -> RTDConfig -> Detection threshold -> UIO
@@ -39,11 +39,11 @@ I/O Page
 - I/O Page -> RTDConfig -> Low Alarm threshold -> UIO
 
 ### Fixed 
-Gateway Page
+- Gateway Page
 - Gateway Page -> Modbus RTU -> StopBits
 - Gateway Page -> Modbus RTU -> Parity
 
-I/O Page
+- I/O Page
 - I/O Page -> AiConfig -> inputType spinner
 - I/O Page -> AiConfig -> Range spinner
 
