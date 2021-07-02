@@ -5,6 +5,31 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adhere to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 App download [Install](https://play.google.com/apps/internaltest/4699210505717851596)
+## 2.5.7A10 IoT Terminal Block App 2021-07-01
+### Added
+- Network Status
+- Network Status -> APN (UI)
+- Network Status -> Network Category (UI)
+- Network Status -> GSM (UI)
+- Network Status -> CatM1 (UI)
+- Network Status -> NB1 (UI)
+
+- Func
+- kotlin plugin
+- ModBusUtil.kt module
+- Timeout Check for Dashboard and I/O Page (Interval = 2s)
+
+### changed
+- Dashboard, I/O Page polling interval 10s -> 5s
+
+### Fixed
+- Gateway Page
+- Gateway Page -> Modbus Slave -> CONFIGURE -> spn_displayFormat
+- Gateway Page -> ItemDetail -> Request number -> isEmpty
+
+- Func
+- Tag BUG for Logcat
+
 ## 2.5.7A9 IoT Terminal Block App 2021-06-22
 ### Added
 - Gateway Page
