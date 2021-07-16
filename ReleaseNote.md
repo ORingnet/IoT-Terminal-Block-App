@@ -1,193 +1,21 @@
 # Release Notes
 
-All notable changes to this project will be documented in this file.
+## v2.6.0 A1 
 
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adhere to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
-App download [Install](https://play.google.com/apps/internaltest/4699210505717851596)
-## 2.5.7A10 IoT Terminal Block App 2021-07-01
-### Added
-- Network Status
-- Network Status -> APN (UI)
-- Network Status -> Network Category (UI)
-- Network Status -> GSM (UI)
-- Network Status -> CatM1 (UI)
-- Network Status -> NB1 (UI)
+### 重大更新
+- 本次改版將舊的點位變更為新版(v1.0.0)點位
 
-- Func
-- kotlin plugin
-- ModBusUtil.kt module
-- Timeout Check for Dashboard and I/O Page (Interval = 2s)
+### 測試
+- 由於新版本需配合App Config mode 來操作(尚未完成), 故此版本無法做全面性的有效測試
 
-### changed
-- Dashboard, I/O Page polling interval 10s -> 5s
+### 新增
+1. Ai Config 頁面加入 Detection threshold 模塊(包含 Enable , Detection threshold, XY% Detection threshold)
+2. 在 Cloud Setting 中若選擇 ORing Cloud 後按下apply, 只會對Address(41016) 寫入為1 , 不會對 Broker Address 與 port 做寫入
 
-### Fixed
-- Gateway Page
-- Gateway Page -> Modbus Slave -> CONFIGURE -> spn_displayFormat
-- Gateway Page -> ItemDetail -> Request number -> isEmpty
-
-- Func
-- Tag BUG for Logcat
-
-## 2.5.7A9 IoT Terminal Block App 2021-06-22
-### Added
-- Gateway Page
-- Gateway Page -> Modbus RTU -> Timeout -> singleLine
-- Gateway Page -> Modbus Slave -> CONFIGURE -> Slave ID -> singleLine
-- Gateway Page -> Modbus Slave -> CONFIGURE -> Start Address -> singleLine
-- Gateway Page -> Modbus Slave -> CONFIGURE -> Num of Data -> singleLine
-- Gateway Page -> Modbus Slave -> CONFIGURE -> Scan Interval -> singleLine
-
-- CloudSetting Page
-- CloudSetting Page -> Port -> singleLine
-
-- BLE Password Check Page
-- New Password -> set safe value range
-- Confirm Password -> set safe value range
-- Confirm Password -> error massage
-
-### changed 
-- Gateway Page
-- Gateway Page -> Modbus RTU -> Timeout -> UIO
-- Gateway Page -> Modbus Slave -> CONFIGURE -> Slave ID -> UIO
-- Gateway Page -> Modbus Slave -> CONFIGURE -> Start Address -> UIO
-- Gateway Page -> Modbus Slave -> CONFIGURE -> Num of Data -> UIO
-- Gateway Page -> Modbus Slave -> CONFIGURE -> Scan Interval -> UIO
-
-- I/O Page
-- I/O Page -> AIConfig -> High Alarm threshold -> UIO
-- I/O Page -> AIConfig -> Low Alarm threshold -> UIO
-- I/O Page -> RTDConfig -> Detection threshold -> UIO
-- I/O Page -> RTDConfig -> XY% Detection threshold -> UIO
-- I/O Page -> RTDConfig -> High Alarm threshold -> UIO
-- I/O Page -> RTDConfig -> Low Alarm threshold -> UIO
-
-### Fixed 
-- Gateway Page
-- Gateway Page -> Modbus RTU -> StopBits
-- Gateway Page -> Modbus RTU -> Parity
-
-- I/O Page
-- I/O Page -> AiConfig -> inputType spinner
-- I/O Page -> AiConfig -> Range spinner
-
-## 2.5.7A8 Iot Terminal Block App 2021-06-17
-### Added
-- DeviceInfo Page
-- DeviceInfo Page -> MQTT Keep A Live -> Empty value protection 
-- DeviceInfo Page -> Edit Device Name -> Limit 4 ~ 12 word (ascii only)
-
-### changed
-- Gateway Page
-- Gateway Page -> Modbus Slave -> Configure -> Auto Update
-
-### Fixed 
-- Gateway Page
-- Gateway Page -> Modbus RTU -> Timeout -> Empty value protection
-- Gateway Page -> Modbus Slave -> CONFIGURE -> Slave ID -> Empty value protection
-- Gateway Page -> Modbus Slave -> CONFIGURE -> Start Address -> Empty value protection
-- Gateway Page -> Modbus Slave -> CONFIGURE -> Num of Data -> Empty value protection
-- Gateway Page -> Modbus Slave -> CONFIGURE -> Scan Interval -> Empty value protection
-
-## 2.5.7A7 Iot Terminal Block App 2021-06-15
-### Added
-- RTD Config Page
-- RTD Config Page -> Alarm threshold, Change detection threshold units will be changed by range spinner item
-
-- DeviceInfo Page
-- DeviceInfo Page -> MQTT Keep A Live -> Safe Value (0-65535)
-
-- CloudSetting Page
-- CloudSetting Page -> lock EditText(Port) when choosing ORing Cloud.
-- CloudSetting Page -> Only send Cloud_Config command when choosing ORing Cloud.
-
-- Gateway Page
-- Gateway Page -> Modbus RTU -> Timeout -> Safe Value (10-300)
-- Gateway Page -> Modbus Slave -> CONFIGURE -> Slave ID -> Safe Value (0-255)
-- Gateway Page -> Modbus Slave -> CONFIGURE -> Start Address -> Safe Value (0-65535)
-- Gateway Page -> Modbus Slave -> CONFIGURE -> Num of Data -> Safe Value (1-128)
-- Gateway Page -> Modbus Slave -> CONFIGURE -> Scan Interval -> Safe Value (10-65535)
-
-- BLE Connection Check
-
-### Changed
-Forcing mode -> Click (Disable Force Mode) button -> Normal mode
-Forcing mode -> Hang out app -> Normal mode
-Forcing mode -> To other menu item -> Normal mode
-Forcing mode -> Click back -> Normal mode
-
-### Fixed
-- Dashboard Page 
-- Dashboard Page -> Auto Update 
-
-- I/O Page 
-- I/O Page -> Auto Update
-
-
-## 2.5.7A6 Iot Terminal Block App 2021-05-26
-### Added
-- Remote Control Page
-- Remote Control Page -> Button(Remote/BLE) when switching between remote mode and BLE mode.
-
-- Slide Menu
-- Build I/O Page for remote mode
-- Build Dashboard Page for remote mode
-- Build Gateway Page for remote mode
-
-## 2.5.7A5 Iot Terminal Block App 2021-05-26
-### Added 
-- Remote Control Page
-- Remote Control Page -> Button(Remote) for Remote mode.
-
-### Changed
-- Api Server
-- api domain name -> https://api.iot-terminal-block.wmc.idc.oringnet.cloud
-- AccessToken check-rules changed.
-
-- Initial Page
-- Check AccessToken in Remote mode.
-- Save AccessToken when OAuth response is success.  
-
-
-## 2.5.7A4 Iot Terminal Block App 2021-05-25
-### Added 
-- Network Status Page
-- Network Status -> Info list -> RSSI (BLE)
-- Network Status -> Info list -> MCC (BLE)
-- Network Status -> Info list -> ORDER NUMBER (BLE)
-- Network Status -> Info list -> BAND CatM1 (BLE)
-- Network Status -> Info list -> BAND NB1 (BLE)
-
-### Changed
-- Dashboard Page copy from I/O Page
-- Slide menu default page -> Dashboard Page
-
-## 2.5.7A3 Iot Terminal Block App 2021-05-10
-### Added
-- Gateway page for menu 
-- Gateway page -> 32 Channel switch button (BLE mode)
-- Gateway page -> RTU Setting (BLE mode)
-- Gateway page -> Item Detail (BLE mode)
-
-- Cloud Setting Page
-- Cloud Setting -> Info list -> CLOUD_CONFIG (BLE mode)
-- Cloud Setting -> Info list -> MQTT Broker (BLE mode)
-- Cloud Setting -> Info list -> Broker port (BLE mode)
-- Cloud Setting -> Info list -> Client ID (BLE mode)
-- Cloud Setting -> Info list -> User Name (BLE mode)
-- Cloud Setting -> Info list -> User Password (BLE mode)
-- Cloud Setting -> Edit Button (BLE mode)
-- Cloud Setting -> Edit mode -> Cloud Connection (BLE mode)
-- Cloud Setting -> Edit mode -> Broker Address (BLE mode)
-- Cloud Setting -> Edit mode -> Port (BLE mode)
-- Cloud Setting -> Edit mode -> Client ID (BLE mode)
-- Cloud Setting -> Edit mode -> UserName (BLE mode)
-- Cloud Setting -> Edit mode -> Password (BLE mode)
-
-### Fixed
-- Fixed a bug where pending transactions would get stuck in the cloud setting page.
-- Fixed a bug where multiple thread running at the same time would issue a loading dialog.
-
-
-
+### 尚未完成
+- 每一頁可做設定的項目都需要加上 App config Mode 機制
+- Network Ststus頁
+- 第一次連進裝置時, 除了新建藍芽密碼, 再加上新建裝置名稱
+- 移除 DeviceInfo 的 編輯裝置名稱功能
+- CloudSetting 的平台選擇項目Cloud Connection 只會在第一次初始化時可以選, 之後若需要重新選擇平台必須手動重置裝置來做初始化
+- 新增Error Status 頁面
