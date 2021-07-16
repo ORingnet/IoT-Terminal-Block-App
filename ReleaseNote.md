@@ -8,6 +8,14 @@
 ### 測試
 - 由於新版本需配合App Config mode 來操作(尚未完成), 故此版本無法做全面性的有效測試
 
+### 目前功能
+- Dashboard 數據查看
+- I/O 數據查看
+- Device Info 數據查看
+- Cloud Setting 數據查看
+- Gateway 數據查看
+- Remote Control (功能正常)
+
 ### 新增
 1. Ai Config 頁面加入 Detection threshold 模塊(包含 Enable , Detection threshold, XY% Detection threshold)
 2. 在 Cloud Setting 中若選擇 ORing Cloud 後按下apply, 只會對Address(41016) 寫入為1 , 不會對 Broker Address 與 port 做寫入
