@@ -1,5 +1,35 @@
 # Release Notes
 
+## 2.6.1 B1
+### 重大更新 
+因應41019變更項目:
+1. App Config mode 的激活方式, 從寫入(0x0001/0x0000)到41019
+變更為使用寫入裝置名稱的第一個word (40512) 作為觸發
+2. 取消App Config Mode 的功能將無法觸發
+
+不變的項目:
+1. Device Mode 裝置目前狀態參考, 讀取 (31017)
+2. Forcing Mode 激活方式, 寫入(0x0001/0x0000)到41017
+
+### 尚未完成 
+- Network Status
+
+### 更新解決的 ISSUE
+[#28702 ](http://192.168.2.30/redmine/issues/28705)  
+[#27865 ](http://192.168.2.30/redmine/issues/27865)  
+[#28705 開關 DO/Relay swich自行彈回](http://192.168.2.30/redmine/issues/28705)  
+[#28707 設定之密碼可輸入低於6碼和超過12 碼](http://192.168.2.30/redmine/issues/28707)  
+[#28716 Trigger無法設定](http://192.168.2.30/redmine/issues/28716)  
+[#28720 Reset password UI 無須輸入Current password也可修改密碼](http://192.168.2.30/redmine/issues/28720)  
+[#28852 Dashboard,IO 顯示值不會自動更新](http://192.168.2.30/redmine/issues/28852)  
+[#28868 AI configure - Alarm設定失效](http://192.168.2.30/redmine/issues/28868)  
+[#28871 RTD/TC switch 選單問題](http://192.168.2.30/redmine/issues/28871)  
+
+### 待解決ISSUE
+[#28714 DI/DO/Relay/AI/RTC/TC 內的 箭頭 符號](http://192.168.2.30/redmine/issues/28714)  
+[#28874 RTD/TC/CJC 讀值的顯示問題](http://192.168.2.30/redmine/issues/28874)  
+
+
 ## 2.6.1 A1
 ### 重大更新 
 - 加入App Config 切換機制
