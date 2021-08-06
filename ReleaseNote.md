@@ -1,5 +1,33 @@
 # Release Notes
 
+## 2.6.1 B2 
+### 主要更新 
+因應41019變更項目:
+1. 禁用 Disable Config Mode 功能紐
+
+新增項目:
+1. Error Status
+2. CloudSetting 中,試圖重新選擇平台的提示觸發
+
+修復異常:
+1. Network Status
+2. DeviceName 異常變更
+
+### 更新解決的 ISSUE
+[#28702 ](http://192.168.2.30/redmine/issues/28705)  
+[#27865 ](http://192.168.2.30/redmine/issues/27865)  
+[#28705 開關 DO/Relay swich自行彈回](http://192.168.2.30/redmine/issues/28705)  
+[#28707 設定之密碼可輸入低於6碼和超過12 碼](http://192.168.2.30/redmine/issues/28707)  
+[#28716 Trigger無法設定](http://192.168.2.30/redmine/issues/28716)  
+[#28720 Reset password UI 無須輸入Current password也可修改密碼](http://192.168.2.30/redmine/issues/28720)  
+[#28852 Dashboard,IO 顯示值不會自動更新](http://192.168.2.30/redmine/issues/28852)  
+[#28868 AI configure - Alarm設定失效](http://192.168.2.30/redmine/issues/28868)  
+[#28871 RTD/TC switch 選單問題](http://192.168.2.30/redmine/issues/28871)  
+
+### 待解決ISSUE
+[#28714 DI/DO/Relay/AI/RTC/TC 內的 箭頭 符號](http://192.168.2.30/redmine/issues/28714)  
+[#28874 RTD/TC/CJC 讀值的顯示問題](http://192.168.2.30/redmine/issues/28874) 
+
 ## 2.6.1 B1
 ### 重大更新 
 因應41019變更項目:
